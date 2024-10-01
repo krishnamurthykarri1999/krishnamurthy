@@ -1,0 +1,70 @@
+.register-container {
+  /* width: 100%;
+  height: 100%; */
+  margin: 170px;
+  padding: 80px 100px 25px 100px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  background-color: rgb(37, 139, 107);
+  text-align: center;
+  /* width: 350px; */
+}
+
+.sub-container {
+  border: 1px solid;
+  padding: 35px;
+  border-radius: 30px;
+  background-color: rgb(52, 52, 143);
+  /* opacity:0.4; */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff;
+  background-color: whitesmoke;
+  outline: none;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #0056b3;
+}
