@@ -1,0 +1,15 @@
+.sidebar {
+  background-color: #343a40;
+  color: white;
+  min-width: 200px;
+  height:auto;
+}
+
+.menu-item {
+  padding: 10px;
+  font-size: 16px;
+  color: #330573;
+}
+.menu-item:hover {
+  background-color: #007bff;
+}

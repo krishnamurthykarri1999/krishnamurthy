@@ -1,13 +1,16 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import "./Register.css"; // Importing the CSS file for styling
 import LockIcon from "@mui/icons-material/Lock";
-export const Register = () => {
+
+export const Register = ({ setIsLoggedIn, setUsername }) => {
+  // Accept setIsLoggedIn and setUsername as props
   const [formData, setFormData] = useState({
     username: "",
-    email: "",
     password: "",
-    mobileNumber: "",
   });
+
+  const navigate = useNavigate(); // Initialize navigate
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,7 +23,15 @@ export const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form Data Submitted:", formData);
-    // You can add form submission logic here
+
+    // Mock authentication check (replace this with actual login logic)
+    if (formData.username === "user" && formData.password === "pass") {
+      setIsLoggedIn(true); // Set login state to true
+      setUsername(formData.username); // Set username in state
+      navigate("/dashboard"); // Redirect to dashboard on successful login
+    } else {
+      alert("Invalid credentials");
+    }
   };
 
   return (
